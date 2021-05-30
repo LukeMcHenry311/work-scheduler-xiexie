@@ -1,4 +1,8 @@
-// parameter listening for a "click" on the saveBtn function 
+// show todays date, ('dddd, MMM Do YYYY') correpsonding to
+// Two-digit-day, three-letter abbreviation of the month, four digit year //
+var todayDate = moment().format('dddd, MMM Do YYYY');
+$("#currentDay").html(todayDate);
+// listening for a "click" on the saveBtn function 
 // text var is basically just saying GET the value of textarea from the siblings of ".description"
 // time var is saying set the value of the parent to the attribute "id"
 // .val is just basicallying saying GET the values of textarea, ( this could also be used for input select and more, and if it is called on an empty function it would be undefined )
@@ -51,11 +55,11 @@ $(document).ready(function () {
     $("#hour10 .description").val(localStorage.getItem("hour10"));
     $("#hour11 .description").val(localStorage.getItem("hour11"));
     $("#hour12 .description").val(localStorage.getItem("hour12"));
-    $("#hour9 .description").val(localStorage.getItem("hour9"));
-    $("#hour9 .description").val(localStorage.getItem("hour9"));
-    $("#hour9 .description").val(localStorage.getItem("hour9"));
-    $("#hour9 .description").val(localStorage.getItem("hour9"));
-    $("#hour9 .description").val(localStorage.getItem("hour9"));
+    $("#hour13 .description").val(localStorage.getItem("hour13"));
+    $("#hour14 .description").val(localStorage.getItem("hour14"));
+    $("#hour15 .description").val(localStorage.getItem("hour15"));
+    $("#hour16 .description").val(localStorage.getItem("hour16"));
+    $("#hour17 .description").val(localStorage.getItem("hour17"));
 
     timeTracker();
 
