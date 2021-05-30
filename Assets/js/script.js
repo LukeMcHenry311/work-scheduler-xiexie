@@ -29,3 +29,14 @@ function timeTracker() {
         }
     })
 }
+
+// get the item's from local storage 
+$("#hour9 .description").val(localStorage.getItem("hour9"));9
+$("#hour9 .description").val(localStorage.getItem("hour9"));10
+$("#hour9 .description").val(localStorage.getItem("hour9"));11
+$("#hour9 .description").val(localStorage.getItem("hour9"));12
+$("#hour9 .description").val(localStorage.getItem("hour9"));1
+$("#hour9 .description").val(localStorage.getItem("hour9"));2
+$("#hour9 .description").val(localStorage.getItem("hour9"));3
+$("#hour9 .description").val(localStorage.getItem("hour9"));4
+$("#hour9 .description").val(localStorage.getItem("hour9"));5
