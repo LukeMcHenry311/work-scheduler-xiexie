@@ -1,3 +1,19 @@
+// parameter listening for a "click" on the saveBtn function 
+// text var is basically just saying GET the value of textarea from the siblings of ".description"
+// time var is saying set the value of the parent to the attribute "id"
+// .val is just basicallying saying GET the values of textarea, ( this could also be used for input select and more, and if it is called on an empty function it would be undefined )
+// wrapped
+$(document).ready(function () {
+    // saveBtn click listener
+    $(".saveBtn").on("click", function () {
+        // get nearby values of the description in jquery
+        var text = $(this).siblings(".description").val();
+        var time = $(this).parent().attr("id");
+
+        // Save text in local storage
+        localStorage.setItem(time, text);
+    })
+
 // referencing present, past, and future from style.css to differentiate between if the time was present, past, and future
 // timeTracker function to show if the time is present, past, or future 
 function timeTracker() {
@@ -42,3 +58,5 @@ $("#hour9 .description").val(localStorage.getItem("hour9"));
 $("#hour9 .description").val(localStorage.getItem("hour9"));
 
 timeTracker();
+
+})
