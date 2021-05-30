@@ -9,3 +9,5 @@ i have created and updated the given code in the following ways:
 4. added enterable event into time block.
 5. added save button for the time block that is then saved into local storage.
 6. made the refresh page keep the saved events from the user.
+
+![Screenshot 2021-05-30 152903](https://user-images.githubusercontent.com/82482629/120120672-0b8eec00-c15c-11eb-852c-dc794120e9f2.png)
