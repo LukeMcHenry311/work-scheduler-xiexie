@@ -14,49 +14,49 @@ $(document).ready(function () {
         localStorage.setItem(time, text);
     })
 
-// referencing present, past, and future from style.css to differentiate between if the time was present, past, and future
-// timeTracker function to show if the time is present, past, or future 
-function timeTracker() {
-    // get current number of hours
-    var timeNow = moment().hour();
+    // referencing present, past, and future from style.css to differentiate between if the time was present, past, and future
+    // timeTracker function to show if the time is present, past, or future 
+    function timeTracker() {
+        // get current number of hours
+        var timeNow = moment().hour();
 
-    // loop over time blocks
-    $(".time-block").each(function () {
-        var blockTime = parseInt($(this).attr("id").split("hour")[1]);
+        // loop over time blocks
+        $(".time-block").each(function () {
+            var blockTime = parseInt($(this).attr("id").split("hour")[1]);
 
-        // To check the time and add the classes for background indicators
-        // if blocktime is less than timenow remove present, remove future, and add past
-        if (blockTime < timeNow) {
-            $(this).addClass("past");
-            $(this).removeClass("present");
-            $(this).removeClass("future");
-        }
-        // else if blocktime is equal to timenow than remove future, remove past, and add present
-        else if (blockTime === timeNow) {
-            $(this).addClass("present")
-            $(this).removeClass("future")
-            $(this).removeClass("past")
-        }
-        // else (anything different) then remove present, remove past, and add future 
-        else {
-            $(this).addClass("future")
-            $(this).removeClass("present")
-            $(this).removeClass("past")
-        }
-    })
-}
+            // To check the time and add the classes for background indicators
+            // if blocktime is less than timenow remove present, remove future, and add past
+            if (blockTime < timeNow) {
+                $(this).addClass("past");
+                $(this).removeClass("present");
+                $(this).removeClass("future");
+            }
+            // else if blocktime is equal to timenow than remove future, remove past, and add present
+            else if (blockTime === timeNow) {
+                $(this).addClass("present")
+                $(this).removeClass("future")
+                $(this).removeClass("past")
+            }
+            // else (anything different) then remove present, remove past, and add future 
+            else {
+                $(this).addClass("future")
+                $(this).removeClass("present")
+                $(this).removeClass("past")
+            }
+        })
+    }
 
-// get the item's from local storage 
-$("#hour9 .description").val(localStorage.getItem("hour9"));
-$("#hour10 .description").val(localStorage.getItem("hour10"));
-$("#hour11 .description").val(localStorage.getItem("hour11"));
-$("#hour12 .description").val(localStorage.getItem("hour12"));
-$("#hour9 .description").val(localStorage.getItem("hour9"));
-$("#hour9 .description").val(localStorage.getItem("hour9"));
-$("#hour9 .description").val(localStorage.getItem("hour9"));
-$("#hour9 .description").val(localStorage.getItem("hour9"));
-$("#hour9 .description").val(localStorage.getItem("hour9"));
+    // get the item's from local storage 
+    $("#hour9 .description").val(localStorage.getItem("hour9"));
+    $("#hour10 .description").val(localStorage.getItem("hour10"));
+    $("#hour11 .description").val(localStorage.getItem("hour11"));
+    $("#hour12 .description").val(localStorage.getItem("hour12"));
+    $("#hour9 .description").val(localStorage.getItem("hour9"));
+    $("#hour9 .description").val(localStorage.getItem("hour9"));
+    $("#hour9 .description").val(localStorage.getItem("hour9"));
+    $("#hour9 .description").val(localStorage.getItem("hour9"));
+    $("#hour9 .description").val(localStorage.getItem("hour9"));
 
-timeTracker();
+    timeTracker();
 
 })
