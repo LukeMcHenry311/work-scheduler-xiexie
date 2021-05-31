@@ -10,4 +10,10 @@ i have created and updated the given code in the following ways:
 5. added save button for the time block that is then saved into local storage.
 6. made the refresh page keep the saved events from the user.
 
+
+repository for weekly challenge is https://github.com/LukeMcHenry311/work-scheduler-xiexie
+
+URL of the deployed application is https://lukemchenry311.github.io/work-scheduler-xiexie/
+
+screenshot of deployed application below
 ![Screenshot 2021-05-30 152903](https://user-images.githubusercontent.com/82482629/120120672-0b8eec00-c15c-11eb-852c-dc794120e9f2.png)
